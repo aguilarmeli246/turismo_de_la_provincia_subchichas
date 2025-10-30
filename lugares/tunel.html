@@ -22,6 +22,72 @@
         section {
             margin-bottom: 30px;
         }
+.boton-volver {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px 40px;
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .boton-volver:hover {
+            transform: translateX(-50%) translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+        }
+
+        .boton-volver:active {
+            transform: translateX(-50%) scale(0.98);
+        }@media (max-width: 992px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .boton-volver {
+        width: 80%;
+        font-size: 15px;
+        padding: 12px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
     </style>
 </head>
 <body>
@@ -66,6 +132,9 @@
 
 
 </main>
+<button class="boton-volver" onclick="window.location.href='C:\PROYECTO WEB/index.html'">
+    ⬅ Volver atrás
+</button>
 
 </body>
 </html>

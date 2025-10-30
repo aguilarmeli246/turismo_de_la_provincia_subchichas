@@ -1,84 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toroyoj - Turismo Sud Chichas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-							a {
-            margin: 30px;
-											background-color: blue;
-											color: white;
-											border: solid blue;
-											font-size: 90%;
-											text-decoration: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toroyoj - Turismo Sud Chichas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* 🔹 Estilo del botón elegante */
+        .boton-volver {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 14px 40px;
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .boton-volver:hover {
+            transform: translateX(-50%) translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+        }
+
+        .boton-volver:active {
+            transform: translateX(-50%) scale(0.98);
+        }
+        @media (max-width: 992px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .boton-volver {
+        width: 80%;
+        font-size: 15px;
+        padding: 12px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
+    </style>
 </head>
 <body>
 
 <header>
-	<a href="../lugares_turiscos.html" class="boton">VOLVER</a>
-
-    <h1>Toroyoj</h1>
-    <img src="../imagenes/toroyoj.jpg" alt="Imagen de Toroyoj">
+    <h1>Toroyoj</h1>
+    <img src="../imagenes/toroyoj.jpg" alt="Imagen de Toroyoj">
 </header>
 
 <main class="container">
+    <section>
+        <h2>📜 Reseña Histórica</h2>
+        <p>
+            Toroyoj, también conocido como Toroyo, es un lugar rodeado de leyendas en el sur de Bolivia, cerca de Tupiza. Su nombre proviene de una historia local que habla de un misterioso toro de oro que apareció en el río San Juan del Oro. Muchos lugareños aseguraban oír sus bramidos incluso después de su desaparición. <br><br>
+            Además de las leyendas, Toroyoj fue históricamente un paso importante entre comunidades rurales, especialmente antes de la construcción del puente. El cruce del río, en épocas de lluvia, era un gran reto por la corriente y el barro. En 1982, se construyó un puente gracias al Servicio Nacional de Caminos, lo que mejoró significativamente el tránsito y conectividad de la región.
+        </p>
+    </section>
 
-    <section>
-        <h2>📜 Reseña Histórica</h2>
-        <p>
-            Toroyoj, también conocido como Toroyo, es un lugar rodeado de leyendas en el sur de Bolivia, cerca de Tupiza. Su nombre proviene de una historia local que habla de un misterioso toro de oro que apareció en el río San Juan del Oro. Muchos lugareños aseguraban oír sus bramidos incluso después de su desaparición. <br><br>
-            Además de las leyendas, Toroyoj fue históricamente un paso importante entre comunidades rurales, especialmente antes de la construcción del puente. El cruce del río, en épocas de lluvia, era un gran reto por la corriente y el barro. En 1982, se construyó un puente gracias al Servicio Nacional de Caminos, lo que mejoró significativamente el tránsito y conectividad de la región.
-        </p>
-    </section>
+    <section>
+        <h2>🧭 Ubicación</h2>
+        <p>
+            Toroyoj se encuentra en las cercanías de la ciudad de Tupiza, en el departamento de Potosí, Bolivia. Está situado a orillas del río San Juan del Oro, en un recodo donde el río forma pequeños remansos naturales. <br><br>
+            La zona presenta un entorno semiárido con paisajes rocosos y montañosos característicos de la región Sud de Chichas. Se puede llegar desde Tupiza por carretera o mediante rutas de senderismo. Gracias al puente construido, actualmente se puede acceder con más facilidad, tanto a pie como en vehículo.
+        </p>
+    </section>
 
-    <section>
-        <h2>🧭 Ubicación</h2>
-        <p>
-            Toroyoj se encuentra en las cercanías de la ciudad de Tupiza, en el departamento de Potosí, Bolivia. Está situado a orillas del río San Juan del Oro, en un recodo donde el río forma pequeños remansos naturales. <br><br>
-            La zona presenta un entorno semiárido con paisajes rocosos y montañosos característicos de la región Sud de Chichas. Se puede llegar desde Tupiza por carretera o mediante rutas de senderismo. Gracias al puente construido, actualmente se puede acceder con más facilidad, tanto a pie como en vehículo.
-        </p>
-    </section>
+    <section>
+        <h2>🌄 Atractivos turísticos</h2>
+        <p>
+            Toroyoj destaca por su belleza natural y tranquilidad. Sus principales atractivos incluyen:<br><br>
+            ✅ <strong>Formaciones rocosas</strong>: acantilados y paisajes esculpidos por el viento y el agua.<br>
+            ✅ <strong>Balneario natural</strong>: en épocas cálidas, sus remansos invitan a nadar o descansar junto al río.<br>
+            ✅ <strong>Leyendas vivas</strong>: la historia del toro de oro sigue siendo parte del imaginario local.<br>
+            ✅ <strong>Fotografía de naturaleza</strong>: por su luz, colores de roca y vegetación típica del chaco andino.<br>
+            ✅ <strong>Ruta turística</strong>: Toroyoj es parte del circuito turístico de Tupiza, junto a lugares como El Sillar, Valle de los Machos y Puerta del Diablo.
+        </p>
+    </section>
 
-    <section>
-        <h2>🌄 Atractivos turísticos</h2>
-        <p>
-            Toroyoj destaca por su belleza natural y tranquilidad. Sus principales atractivos incluyen:<br><br>
-            ✅ <strong>Formaciones rocosas</strong>: acantilados y paisajes esculpidos por el viento y el agua.<br>
-            ✅ <strong>Balneario natural</strong>: en épocas cálidas, sus remansos invitan a nadar o descansar junto al río.<br>
-            ✅ <strong>Leyendas vivas</strong>: la historia del toro de oro sigue siendo parte del imaginario local.<br>
-            ✅ <strong>Fotografía de naturaleza</strong>: por su luz, colores de roca y vegetación típica del chaco andino.<br>
-            ✅ <strong>Ruta turística</strong>: Toroyoj es parte del circuito turístico de Tupiza, junto a lugares como El Sillar, Valle de los Machos y Puerta del Diablo.
-        </p>
-    </section>
-
-    <section>
-        <h2>📷 Galería</h2>
-        <img src="../imagenes/toroyoj2.jpg" alt="Otra vista de Toroyoj">
-        <img src="../imagenes/toroyoj3.jpg" alt="Vista adicional">
-        <!-- Puedes agregar más imágenes aquí -->
-    </section>
-
+    <section>
+        <h2>📷 Galería</h2>
+        <img src="../imagenes/toroyoj2.jpg" alt="Otra vista de Toroyoj">
+        <img src="../imagenes/toroyoj3.jpg" alt="Vista adicional">
+    </section>
 </main>
+
+<!-- 🔙 Botón de volver -->
+<button class="boton-volver" onclick="window.location.href='C:\PROYECTO WEB/index.html'">
+    ⬅ Volver atrás
+</button>
 
 </body>
 </html>
